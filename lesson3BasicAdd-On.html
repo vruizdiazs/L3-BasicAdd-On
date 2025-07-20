@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Imágenes en disposición orgánica</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.05);
+        }
+        
+        .img1 {
+            transform: rotate(-5deg) translate(10px, 15px);
+        }
+        
+        .img2 {
+            transform: rotate(3deg) translate(-5px, 20px);
+        }
+        
+        .img3 {
+            transform: rotate(7deg) translate(25px, -10px);
+        }
+        
+        .img4 {
+            transform: rotate(-2deg) translate(-10px, 5px);
+        }
+    </style>
 </head>
-<style>
-  img1 {
-      /* Function values */
-        transform: rotate(0.5);
-        transform: rotateX(10deg);
-        transform: rotateY(10deg);
-        transform: rotateZ(10deg);
-        transform: translate(12px, 50%);
-        transform: translate3d(12px, 50%, 3em);
-        transform: translateX(2em);
-        transform: translateY(3in);
-        transform: translateZ(2px);
-        transform: scale(2, 0.5);
-        transform: skew(30deg, 20deg);;
-
-  }
-
-
-img2 {
-    /* Multiple function values */
-        transform: translateX(10px) rotate(10deg) translateY(5px);
-        transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
-}
-
-</style>
 <body>
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/170/849/original/Asuncion-4.jpg?1752956344" alt="img1">
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/170/848/original/samber.jpg?1752956331" alt class="img2">
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/170/847/original/itaipu.jpeg?1752956323" alt class="img3">
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/170/819/original/encar.jpg?1752873539" alt class="img4">
-
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/170/849/original/Asuncion-4.jpg?1752956344" alt="Asunción" class="img1">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/170/848/original/samber.jpg?1752956331" alt="Samber" class="img2">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/170/847/original/itaipu.jpeg?1752956323" alt="Itaipú" class="img3">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/170/819/original/encar.jpg?1752873539" alt="Encarnación" class="img4">
 </body>
 </html>
